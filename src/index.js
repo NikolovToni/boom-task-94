@@ -6,6 +6,13 @@ window.addEventListener("DOMContentLoaded", () => {
   const app = new Application();
   // Used to access the app instance by the automated tests
   app.setEmojis(["🐒", "🦍", "🦧"]);
-  app.addBananas();
+  const newMonkeys = [];
+  app.addBananas(newMonkeys);
+  console.log(newMonkeys);
+
+  const newDiv = document.getElementById("emojis");
+  const newParagraph = document.createElement("p");
+  newParagraph.textContent = newMonkeys;
+  newDiv.appendChild(newParagraph);
   window.__JS_APP = app;
 });
