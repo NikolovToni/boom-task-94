@@ -22,7 +22,5 @@ export default class Application extends EventEmitter {
       // return `${e} ${this.banana}`;
       return newMonkeys.push(`${e} ${this.banana}`);
     });
-
-    console.log(newMonkeys);
   }
 }
